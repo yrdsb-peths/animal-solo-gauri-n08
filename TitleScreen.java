@@ -9,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class TitleScreen extends World
 {
     Label titleLabel = new Label("The Elephant", 60);
-
     /**
      * Constructor for objects of class TitleScreen.
      * 
@@ -36,6 +35,7 @@ public class TitleScreen extends World
 
         }
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -44,5 +44,9 @@ public class TitleScreen extends World
     {
         Elephant elephant = new Elephant();
         addObject(elephant,500,95);
+        Label arrowLabel = new Label("Use <-- and --> to Move", 30);
+        addObject(arrowLabel,getWidth()/2,getHeight()/2);
+        Label spaceLabel = new Label("Press <space> to Start", 30);
+        addObject(spaceLabel,getWidth()/2,getHeight()/2 + 60);
     }
 }
