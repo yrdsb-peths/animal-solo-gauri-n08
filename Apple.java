@@ -8,6 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Apple extends Actor
 {
+    //Set Apple Image 
+    public Apple()
+    {
+        GreenfootImage myApple = new GreenfootImage("apple.png");
+        setImage(myApple); 
+    }
+
     int speed = 1;
     
     public void act()
